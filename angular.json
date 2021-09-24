@@ -3,5 +3,86 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "testLightCalendar": {
+      "projectType": "library",
+      "root": "projects/test-light-calendar",
+      "sourceRoot": "projects/test-light-calendar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/test-light-calendar/tsconfig.lib.json",
+            "project": "projects/test-light-calendar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/test-light-calendar/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/test-light-calendar/src/test.ts",
+            "tsConfig": "projects/test-light-calendar/tsconfig.spec.json",
+            "karmaConfig": "projects/test-light-calendar/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/test-light-calendar/tsconfig.lib.json",
+              "projects/test-light-calendar/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "myCalendar": {
+      "projectType": "library",
+      "root": "projects/my-calendar",
+      "sourceRoot": "projects/my-calendar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/my-calendar/tsconfig.lib.json",
+            "project": "projects/my-calendar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/my-calendar/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/my-calendar/src/test.ts",
+            "tsConfig": "projects/my-calendar/tsconfig.spec.json",
+            "karmaConfig": "projects/my-calendar/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/my-calendar/tsconfig.lib.json",
+              "projects/my-calendar/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "testLightCalendar"
 }

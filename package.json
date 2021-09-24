@@ -1,6 +1,16 @@
 {
-  "name": "applibs",
+  "name": "test-light-calendar",
   "version": "0.0.0",
+  "description": "Light weight calendar",
+  "author": {
+    "name": "cxxyao2",
+    "url": "https:/cxxyao2.github.io"
+  },
+  "keywords": [
+    "test library",
+    "calendar",
+    "light weight"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,6 +33,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1100.7",
     "@angular/cli": "~11.0.4",
     "@angular/compiler-cli": "~11.0.4",
     "@types/jasmine": "~3.6.0",
@@ -35,6 +46,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
