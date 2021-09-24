@@ -26,3 +26,11 @@
 - in component
   - .html, use selector
   - <lib-testLightCalendar></lib-testLightCalendar>
+
+## proofs
+
+![before publish](./assets/beforepublish.png)
+![publish1](./assets/publish1.png)
+![publish2](./assets/publish2.png)
+![consume1](./assets/consume1.png)
+![consume2](./assets/consume2.png)
