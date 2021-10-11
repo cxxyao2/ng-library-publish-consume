@@ -15,6 +15,9 @@
 - cd test-light-calendar
 - npm login
 - npm publish
+  - when you publish the package the second time
+  - npm version patch | minor |..
+  - npm publish
 
 ## consumed this library in other angular app.
 
@@ -26,6 +29,17 @@
 - in component
   - .html, use selector
   - <lib-testLightCalendar></lib-testLightCalendar>
+
+## we can pass parameters to module using forRoot
+
+- add Inject in service.ts
+  - ![forRoot1](./assets/forRoot_1.png)
+- add static forRoot in module.ts
+
+  - ![forRoot2](./assets/forRoot_2.png)
+
+- when we consume the library, use moduleName.forRoot({..}) in app.module.ts
+  - ![forRoot2](./assets/consume3_forRoot.png)
 
 ## proofs
 
